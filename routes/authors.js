@@ -3,6 +3,14 @@ import pool from "../db/db.js"
 
 const router = express.Router()
 
+// authors table structure
+// CREATE TABLE authors (
+//     author_id integer NOT NULL,
+//     name character varying(100) NOT NULL,
+//     birth_date date,
+//     nationality character varying(50)
+// );
+
 // อ่านข้อมูลจาก Table Authors
 router.get('/', async (req , res) => {
   try {
